@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="18dp"
     android:paddingRight="18dp"
-    android:background="@drawable/gradient">
+    android:background="@drawable/new_login_gradients">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -102,14 +102,14 @@
                 android:textSize="18sp" />
 
             <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Forget your Password? "
-                style="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#fff"
-                android:padding="16dp"
+                android:layout_marginBottom="16dp"
                 android:clickable="true"
-                android:layout_marginBottom="16dp"/>
+                android:padding="16dp"
+                android:text="Forgot Password? "
+                android:textColor="#fff" />
 
         </LinearLayout>
     </ScrollView>
