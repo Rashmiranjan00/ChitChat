@@ -11,4 +11,5 @@
     <item
         android:id="@+id/mainLogoutBtn"
         android:title="@string/logout" />
+
 </menu>
