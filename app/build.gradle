@@ -39,6 +39,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:3.2.2'
     implementation 'id.zelory:compressor:2.1.0'
     implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
 
 
 }

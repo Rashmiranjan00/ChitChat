@@ -68,7 +68,7 @@ public class StartActivity extends AppCompatActivity {
 
                 if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
 
-                    mLoginProgress.setTitle("Logging In");
+                    mLoginProgress.setTitle("Logging in");
                     mLoginProgress.setMessage("Please wait while we check your credentials.");
                     mLoginProgress.setCanceledOnTouchOutside(false);
                     mLoginProgress.show();
@@ -77,7 +77,7 @@ public class StartActivity extends AppCompatActivity {
 
                 } else {
 
-                    Toast.makeText(StartActivity.this, "Please FillUp", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartActivity.this, "Please Fill up", Toast.LENGTH_LONG).show();
 
                 }
 
@@ -116,7 +116,7 @@ public class StartActivity extends AppCompatActivity {
                 } else {
 
                     mLoginProgress.hide();
-                    Toast.makeText(StartActivity.this, "Can not signIn. Please check the form and Try again..", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartActivity.this, "Can not sign in. Please check the form and Try again..", Toast.LENGTH_LONG).show();
                 }
             }
         });

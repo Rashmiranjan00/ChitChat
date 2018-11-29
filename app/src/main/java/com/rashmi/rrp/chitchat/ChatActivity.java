@@ -74,7 +74,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private StorageReference mImageStorage;
 
-    private static final int TOTAL_ITEMS_TO_LOAD = 10;
+    private static final int TOTAL_ITEMS_TO_LOAD = 20;
     private int mCurrentPage = 1;
 
     private static final int GALLERY_PICK = 1;
@@ -193,7 +193,7 @@ public class ChatActivity extends AppCompatActivity {
 
                             if(databaseError != null) {
 
-                                Log.d("CHAT LOG ", databaseError.getMessage().toString());
+                                Log.d("CHAT LOG ", databaseError.getMessage());
 
                             }
 
@@ -345,7 +345,7 @@ public class ChatActivity extends AppCompatActivity {
 
                 mRefreshLayout.setRefreshing(false);
 
-                mLinearLayout.scrollToPositionWithOffset(10, 0);
+                mLinearLayout.scrollToPositionWithOffset(20, 0);
 
             }
 
