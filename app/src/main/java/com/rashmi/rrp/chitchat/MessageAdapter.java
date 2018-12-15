@@ -49,6 +49,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
         public TextView messageText;
         public TextView displayName;
+        public TextView displayTime;
         public CircleImageView profileImage;
         public ImageView messageImage;
 
@@ -59,6 +60,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             profileImage = view.findViewById(R.id.messageProfileLayout);
             messageImage = view.findViewById(R.id.messageImageLayout);
             displayName = view.findViewById(R.id.nameTextLayout);
+            displayTime = view.findViewById(R.id.timeTextLayout);
 
         }
     }
@@ -99,6 +101,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         if(messageType.equals("text")) {
 
             holder.messageText.setText(c.getMessage());
+//            holder.displayTime.setText(c.getTime());
             holder.messageImage.setVisibility(View.INVISIBLE);
 
         } else {

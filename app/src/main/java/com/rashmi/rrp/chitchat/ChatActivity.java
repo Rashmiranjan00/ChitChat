@@ -261,6 +261,7 @@ public class ChatActivity extends AppCompatActivity {
             DatabaseReference userMessagePush = mRootRef.child("messages")
                     .child(mCurrentUserId).child(mChatUser).push();
 
+
             final String pushId = userMessagePush.getKey();
 
             StorageReference filePath = mImageStorage.child("message_images").child(pushId + ".jpg");
@@ -293,7 +294,7 @@ public class ChatActivity extends AppCompatActivity {
 
                                 if(databaseError != null) {
 
-                                    Log.d("CHAT_LOG", databaseError.getMessage().toString());
+                                    Log.d("CHAT_LOG", databaseError.getMessage());
 
                                 }
 

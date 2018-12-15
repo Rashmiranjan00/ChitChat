@@ -197,10 +197,10 @@ public class FriendsFragment extends Fragment {
 
         }
 
-        public void setStatus(String date) {
+        public void setStatus(String status) {
 
             TextView userStatusView = mView.findViewById(R.id.userSingleStatus);
-            userStatusView.setText(date);
+            userStatusView.setText(status);
 
         }
 

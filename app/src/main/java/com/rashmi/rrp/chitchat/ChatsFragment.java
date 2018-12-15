@@ -105,13 +105,14 @@ public class ChatsFragment extends Fragment {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
+                        String data = dataSnapshot.child("message").getValue().toString();
+                        holder.setMessage(data, model.isSeen());
+
                     }
 
                     @Override
                     public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
-                        String data = dataSnapshot.child("message").getValue().toString();
-                        holder.setMessage(data, model.isSeen());
 
                     }
 
@@ -136,6 +137,7 @@ public class ChatsFragment extends Fragment {
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         final String userName = dataSnapshot.child("name").getValue().toString();
+//                        String userStatus = dataSnapshot.child("status").getValue().toString();
                         String userThumb = dataSnapshot.child("thumb_image").getValue().toString();
 
                         if(dataSnapshot.hasChild("online")) {
@@ -146,6 +148,7 @@ public class ChatsFragment extends Fragment {
                         }
 
                         holder.setName(userName);
+//                        holder.setStatus(userStatus);
                         holder.setUserImage(userThumb, getContext());
 
                         holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -215,6 +218,13 @@ public class ChatsFragment extends Fragment {
             userNameView.setText(name);
 
         }
+
+//        public void setStatus(String status) {
+//
+//            TextView userStatusView = mView.findViewById(R.id.userSingleStatus);
+//            userStatusView.setText(status);
+//
+//        }
 
         public void setUserImage(String thumb_image, Context ctx){
 
